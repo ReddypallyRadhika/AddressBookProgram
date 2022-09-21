@@ -3,72 +3,35 @@
  */
 package com.bridgelabz;
 
+import java.util.ArrayList;
+
 /**
  * @author hp
  *
  *
- *Ability to create a Contacts in Address
-Book with first and last names, address,
-city, state, zip, phone number and
-email...
- *
- *
- *
- *
- *
- */
+ /*UC2
+  * Ability to add a new Contact to Address Book - Use Console to add person details from AddressBookMain class
+  * - Use Object Oriented Concepts to manage relationship between AddressBook and Contact Person
+  */  
 
 
 
 public class AddressBook {
 	
-	String firstName;
-	String lastName;
-	String address;
-	String city;
-	String state;
-	int zip;
-	long phoneNumber;
-	String emailId;	
+	
+// one address book called family can have many contacts of family
+	
+	// contact will be an object
+// 	right?
+
+// Arrays or Arryalist 
+// Where we store objects
 	
 	
+	ArrayList<ContactPerson> allContacts = new ArrayList<ContactPerson>();
 	
-
-	/**
-	 * @param firstName
-	 * @param lastName
-	 * @param address
-	 * @param city
-	 * @param state
-	 * @param zip
-	 * @param phoneNumber
-	 * @param emailId
-	 */
-	public AddressBook(String firstName, String lastName, String address, String city, String state, int zip,
-			long phoneNumber, String emailId) {
-		
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.zip = zip;
-		this.phoneNumber = phoneNumber;
-		this.emailId = emailId;
-	}
-
-
-
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		
-		// no use of getter and setter
-		
-		AddressBook contactNo1 = new AddressBook("Radhika","Sagar","Jeedimetla","Hyd","TS",55,773082683,"reddypallyradhika@gmail.com");
-
-	}
+	public void addToAddressBook(ContactPerson personContact) {
+		allContacts.add(personContact);
+	}	
 
 }
