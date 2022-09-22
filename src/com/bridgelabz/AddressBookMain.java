@@ -1,4 +1,4 @@
-/**
+ /**
  * 
  */
 package com.bridgelabz;
@@ -15,33 +15,41 @@ public class AddressBookMain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
 		Scanner input = new Scanner(System.in);
-		String firstName1,lastName1, address1, city1, state1, email1;
-		int zip1;
-		long phoneNo1;
 		
-		System.out.println("Enter first name, last name, address, city, state,email ID, zip, phone number  sequentially");
-		firstName1 = input.nextLine();
-	    lastName1 = input.nextLine();
-		address1 = input.nextLine();
-		city1 = input.nextLine();
-		state1 = input.nextLine();
-		email1 = input.nextLine();	
-		zip1 = input.nextInt();
-		phoneNo1 = input.nextInt();
-			
-		
-		ContactPerson personObj = new ContactPerson(firstName1, lastName1, address1, city1, state1, zip1,phoneNo1, email1);
-		
-		// Object, take this object and throw it in arryas list addressbook
-		
+		// Object of address book
 		AddressBook addressBook1 = new AddressBook();
-		addressBook1.addToAddressBook(personObj);
 		
-		input.close();
+
+		int choice =1;  // to keep loop running...
+		
+		while (choice!=0){
+         
+            switch (choice){
+                case 0:
+                    return;                   
+                case 1:
+                    addressBook1.addToAddressBook();
+                    break;
+                case 2:
+                    addressBook1.editPersonName();
+                    break;   
+                case 3:
+                	addressBook1.displayAddressBook();
+                	break;
+            }
+
+		// Printing output on screen
+		System.out.println("Press 0 to exit \nPress 1 to add more contact \nPress 2 to edit contact \nPress 3 to display");
+
+            choice = input.nextInt();
+            
+           
 
 
+        }
+		
+		input.close(); // closing scanner class after program exit
 	}
 
 }

@@ -40,6 +40,18 @@ public class ContactPerson {
 		this.emailId = emailId;
 	}	
 	
+	//Method for displaying data
+		public void displayContact() {
+			System.out.println("First Name : "+firstName);
+			System.out.println("Last Name : "+lastName);
+			System.out.println("Address : "+address);
+			System.out.println("City : "+city);
+			System.out.println("State : "+state);
+			System.out.println("Zip : "+zip);
+			System.out.println("Phone Number : "+phoneNumber);
+			System.out.println("Email Id : "+emailId);
+		}
+	
 	
 	
 
