@@ -14,9 +14,10 @@ public class ContactPerson {
 	String address;
 	String city;
 	String state;
+	String emailId;
 	int zip;
 	long phoneNumber;
-	String emailId;
+	
 	/**
 	 * @param firstName
 	 * @param lastName
@@ -27,17 +28,18 @@ public class ContactPerson {
 	 * @param phoneNumber
 	 * @param emailId
 	 */
-	public ContactPerson(String firstName, String lastName, String address, String city, String state, int zip,
-			long phoneNumber, String emailId) {
+	public ContactPerson(String firstName, String lastName, String address, String city, String state, String emailId, int zip,
+			long phoneNumber) {
 		
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
 		this.city = city;
 		this.state = state;
+		this.emailId = emailId;
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
-		this.emailId = emailId;
+		
 	}	
 	
 	//Method for displaying data
@@ -47,9 +49,10 @@ public class ContactPerson {
 			System.out.println("Address : "+address);
 			System.out.println("City : "+city);
 			System.out.println("State : "+state);
+			System.out.println("Email Id : "+emailId);
 			System.out.println("Zip : "+zip);
 			System.out.println("Phone Number : "+phoneNumber);
-			System.out.println("Email Id : "+emailId);
+			
 		}
 	
 	
