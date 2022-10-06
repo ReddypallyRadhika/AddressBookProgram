@@ -9,8 +9,10 @@ import java.util.Scanner;
  * @author hp
  *
  *
- *         /*UC4 Ability to delete a person using person's name - Use Console to
- *         delete a person.
+ * UC5
+ * Ability to add multiple person to Address Book
+ * - Use Console to add person details one at a time
+ * - Use Collection Class to maintain multiple contact persons in Address Book.
  */
 
 public class AddressBook {
@@ -95,8 +97,14 @@ public class AddressBook {
 		if (initallyPersonIsNotPresnt == 0) {
 			System.out.println("No record found with given name");
 		}
+		else
+		{
+			System.out.println("Delete completed");
+		}
 
 	}
+	
+	
 
 	public void displayAddressBook() {
 		for (int i = 0; i < index; i++) {
