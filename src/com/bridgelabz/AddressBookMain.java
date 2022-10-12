@@ -3,6 +3,7 @@
 */
 package com.bridgelabz;
 
+
 import java.util.Scanner;
 
 /**
@@ -14,12 +15,13 @@ public class AddressBookMain {
 	/**
 	 * @param args
 	 */
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+      
 
 		// Object of address book
 		AddressBook addressBook1 = new AddressBook();
-
 		int choice = 1; // to keep loop running...
 
 		while (choice != 0) {
@@ -50,6 +52,8 @@ public class AddressBookMain {
 		}
 
 		input.close(); // closing scanner class after program exit
-	}
+		}
+		
+	
 
 }

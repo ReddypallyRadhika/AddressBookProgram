@@ -8,7 +8,7 @@ package com.bridgelabz;
  *
  */
 public class ContactPerson {
-
+	String addressBook;
 	String firstName;
 	String lastName;
 	String address;
@@ -28,9 +28,9 @@ public class ContactPerson {
 	 * @param phoneNumber
 	 * @param emailId
 	 */
-	public ContactPerson(String firstName, String lastName, String address, String city, String state, String emailId,
+	public ContactPerson(String addressBook,String firstName, String lastName, String address, String city, String state, String emailId,
 			int zip, long phoneNumber) {
-
+		this.addressBook = addressBook;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
@@ -44,6 +44,7 @@ public class ContactPerson {
 
 	// Method for displaying data
 	public void displayContact() {
+		System.out.println("Address Book Name : " + addressBook);
 		System.out.println("First Name : " + firstName);
 		System.out.println("Last Name : " + lastName);
 		System.out.println("Address : " + address);
