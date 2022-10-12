@@ -28,8 +28,8 @@ public class ContactPerson {
 	 * @param phoneNumber
 	 * @param emailId
 	 */
-	public ContactPerson(String addressBook,String firstName, String lastName, String address, String city, String state, String emailId,
-			int zip, long phoneNumber) {
+	public ContactPerson(String addressBook, String firstName, String lastName, String address, String city,
+			String state, String emailId, int zip, long phoneNumber) {
 		this.addressBook = addressBook;
 		this.firstName = firstName;
 		this.lastName = lastName;
